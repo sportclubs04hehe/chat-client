@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-validation-message',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './validation-message.component.scss'
 })
 export class ValidationMessageComponent {
-
+  errorMessage = input<string[] | undefined>();
 }
